@@ -7,7 +7,7 @@ SESSION="${PWD##*/}"
 WINDOW1='VIM'
 WINDOW2='TER'
 WINDOW3='RUN'
-WINDOW4='DCK'
+WINDOW4='CDX'
 
 tmux new-session -d -s "$SESSION"
 tmux rename-window -t 1 $WINDOW1
@@ -16,5 +16,5 @@ tmux new-window -t "$SESSION:2" -n ${WINDOW2}
 tmux new-window -t "$SESSION:3" -n ${WINDOW3}
 tmux send-keys -t 3 "run"
 tmux new-window -t "$SESSION:4" -n $WINDOW4
-tmux send-keys -t 4 "docker compose up"
+tmux send-keys -t 4 "codex" C-m
 tmux attach -t "$SESSION:1"

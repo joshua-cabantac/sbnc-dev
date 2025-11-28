@@ -1,20 +1,20 @@
 #!/bin/bash
-#!/usr/bin/env bash
 set -euo pipefail
 
 SESSION="edit-configs"
 
 # ordered list of window names
-WINDOWS=(zshrc tmux nvim alacritty hyprland waybar)
+WINDOWS=(zshrc tmux nvim kitty hyprland waybar sbnc-dev)
 
 # mapping from name → path
 declare -A CONFIGS=(
   [zshrc]="$HOME/.zshrc"
   [tmux]="$HOME/.config/tmux/tmux.conf"
   [nvim]="$HOME/.config/nvim"
-  [alacritty]="$HOME/.config/alacritty"
+  [kitty]="$HOME/.config/kitty"
   [hyprland]="$HOME/.config/hypr/hyprland.conf"
   [waybar]="$HOME/.config/waybar"
+  [sbnc-dev]="$HOME/sbnc-dev"
 )
 
 # if session exists, attach
