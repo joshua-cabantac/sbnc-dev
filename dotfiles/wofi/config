@@ -1,0 +1,17 @@
+
+# Wofi configuration (SBNC minimal)
+show=drun
+prompt=run:
+hide_scroll=true
+allow_images=true
+allow_markup=true
+insensitive=true
+no_actions=true
+term=kitty
+width=600
+height=400
+location=center
+orientation=vertical
+dynamic_lines=true
+columns=1
+filter_rate=30

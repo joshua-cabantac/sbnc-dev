@@ -1,0 +1,67 @@
+
+@define-color bg_main   #0b0d0e;
+@define-color bg_alt    #24426D;
+@define-color fg_main   #C4C4C4;
+@define-color fg_dim    #747474;
+@define-color fg_muted  #a6a6af;
+@define-color fg_comment #B9ACC2;
+
+@define-color accent_aqua #95bce0;
+@define-color accent_rose #d38a86;
+@define-color accent_gold #d6b77d;
+@define-color accent_blue #669CD1;
+@define-color accent_cyan #6790AE;
+
+* {
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-size: 15px;
+  border: none;
+}
+
+window#waybar {
+  background-color: @bg_main;
+  color: @fg_main;
+}
+
+#workspaces button {
+  padding: 1px 15px;
+  margin: 5px 5px;
+  color: @fg_dim;
+}
+
+#workspaces button.active {
+  color: @accent_blue;
+  background: @bg_alt;
+  border-radius: 10px;
+}
+
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+  padding: 5px 10px;
+  color: @fg_main;
+}
+
+#clock {
+  color: @accent_gold;
+}
+
+#cpu {
+  color: @accent_aqua;
+}
+
+#memory {
+  color: @accent_rose;
+}
+
+#pulseaudio {
+  color: @accent_cyan;
+}
+
+#tray > .passive {
+  opacity: 0.5;
+}
+

@@ -1,0 +1,56 @@
+
+window {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  background-color: #0b0d0e; /* s:bg_main */
+  color: #C4C4C4; /* s:fg_main */
+  border: 2px solid #24426D; /* s:bg_alt (subtle border) */
+  border-radius: 12px;
+  padding: 8px;
+}
+
+#input {
+  margin: 8px;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  background-color: #0b0d0e;
+  color: #C4C4C4;
+  border-bottom: 1px solid #24426D;
+}
+
+#input:focus {
+  border-bottom: 1px solid #95bce0; /* accent_aqua */
+  color: #95bce0;
+}
+
+#scroll {
+  margin-top: 6px;
+}
+
+#entry {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: none;
+  color: #C4C4C4;
+}
+
+#entry:selected {
+  background-color: #24426D;
+  color: #95bce0; /* accent_aqua */
+}
+
+#text {
+  margin-left: 6px;
+}
+
+#img {
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+/* Optional hover effect if you use mouse */
+#entry:hover {
+  background-color: #1b2736;
+  color: #d6b77d; /* accent_gold */
+}

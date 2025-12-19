@@ -4,7 +4,7 @@ set -euo pipefail
 SESSION="edit-configs"
 
 # ordered list of window names
-WINDOWS=(zshrc tmux nvim kitty hyprland waybar sbnc-dev)
+WINDOWS=(zshrc tmux nvim kitty hyprland waybar sbnc-dev vault)
 
 # mapping from name → path
 declare -A CONFIGS=(
@@ -15,6 +15,7 @@ declare -A CONFIGS=(
   [hyprland]="$HOME/.config/hypr/hyprland.conf"
   [waybar]="$HOME/.config/waybar"
   [sbnc-dev]="$HOME/sbnc-dev"
+  [vault]="$HOME/Vault/.obsidian.vimrc"
 )
 
 # if session exists, attach
